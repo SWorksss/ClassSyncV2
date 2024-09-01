@@ -4,11 +4,10 @@ import { Component } from '@angular/core';
   selector: 'app-content',
   standalone: true,
   imports: [],
-  template: `
-    <h1>Content</h1>
-  `,
-  styles: ``
+  templateUrl: './content.component.html',
+  styleUrls: ['./content.component.scss']
 })
+
 export class ContentComponent {
 
 }

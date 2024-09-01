@@ -13,41 +13,8 @@ import { CustomSidenavComponent } from "./components/custom-sidenav/custom-siden
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, MatToolbarModule, MatButtonModule, MatIconModule, MatSidenavModule, CustomSidenavComponent],
-  template: `
-    <mat-toolbar class="mat-elevation-z3">
-      <button mat-icon-button (click)="collapsed.set(!collapsed())">
-        <mat-icon>menu</mat-icon>
-      </button>
-    </mat-toolbar>
-    <mat-sidenav-container>
-      <mat-sidenav opened mode="side" [style.width]="sidenavWidth()">
-        <app-custom-sidenav [collapsed]="collapsed()" />
-      </mat-sidenav>
-      <mat-sidenav-content class="content" [style.margin-left]="sidenavWidth()">
-        <router-outlet></router-outlet>
-      </mat-sidenav-content>
-    </mat-sidenav-container>
-  `,
-  styles: [
-    `
-    mat-toolbar {
-      position: relative;
-      z-index: 5;
-    }
-
-    .content {
-      padding: 24px;
-    }
-
-    mat-sidenav-container {
-      height: calc(100vh - 64px);
-    }
-
-    mat-sidenav, mat-sidenav-content {
-      transition: all 500ms ease-in-out;
-    }
-    `
-  ],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   collapsed = signal(false);
