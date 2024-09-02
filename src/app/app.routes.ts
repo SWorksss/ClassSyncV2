@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { ContentComponent } from './pages/content/content.component';
+import { ScheduleComponent } from './pages/schedule/schedule.component';
 import { AnalyticsComponent } from './pages/analytics/analytics.component';
 import { CommentsComponent } from './pages/comments/comments.component';
 
@@ -15,8 +15,8 @@ export const routes: Routes = [
         component: DashboardComponent
     },
     {
-        path: 'content',
-        component: ContentComponent
+        path: 'schedule',
+        component: ScheduleComponent
     },
     {
         path: 'analytics',

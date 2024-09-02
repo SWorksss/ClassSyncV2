@@ -30,8 +30,8 @@ export class CustomSidenavComponent {
     },
     {
       icon: 'video_library',
-      label: 'Content',
-      route: 'content'
+      label: 'Schedule',
+      route: 'schedule'
     },
   ]);
 
