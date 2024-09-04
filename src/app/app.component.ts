@@ -8,7 +8,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomSidenavComponent } from "./components/custom-sidenav/custom-sidenav.component";
 
-
 @Component({
   selector: 'app-root',
   standalone: true,
