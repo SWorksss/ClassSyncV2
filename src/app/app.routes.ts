@@ -3,6 +3,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ScheduleComponent } from './pages/schedule/schedule.component';
 import { AnalyticsComponent } from './pages/analytics/analytics.component';
 import { CommentsComponent } from './pages/comments/comments.component';
+import { LoginComponent } from './pages/login/login.component';
 
 export const routes: Routes = [
     // {
@@ -25,5 +26,9 @@ export const routes: Routes = [
     {
         path: 'comments',
         component: CommentsComponent
+    },
+    {
+        path: 'login',
+        component: LoginComponent
     }
 ];
